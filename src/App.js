@@ -4,10 +4,10 @@ import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, {useState} from 'react'
-// import {
-//   Routes,
-//   Route,
-// } from "react-router-dom";
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
 
@@ -45,12 +45,12 @@ function App() {
       <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert}/>
       <div className="container my-3">
-        {/* <Routes>
+        <Routes>
           <Route exact path="/About" element={<About mode={mode}/>}></Route>
           <Route exact path="/" element={<TextForm heading = "Enter the text to analyze below" mode={mode} showAlert={showAlert}/>}></Route>
-        </Routes> */}
-        <TextForm/>
-        <About/>
+        </Routes>
+        {/* <TextForm/>
+        <About/> */}
       </div>
     </>
   );
